@@ -1,0 +1,16 @@
+ERROR ! Неверный тип данных для объекта <class 'with_exception.Runner'>
+Traceback (most recent call last):
+  File "C:\Users\yusyp\Python Projects\pythonProject\module 8\tests_12_4.py", line 23, in test_run
+    y = Runner(40)
+        ^^^^^^^^^^
+  File "C:\Users\yusyp\Python Projects\pythonProject\module 8\with_exception.py", line 6, in __init__
+    raise TypeError(f'Имя может быть только строкой, передано {type(name).__name__}')
+TypeError: Имя может быть только строкой, передано int
+ERROR ! Неверная скорость для<class 'with_exception.Runner'>
+Traceback (most recent call last):
+  File "C:\Users\yusyp\Python Projects\pythonProject\module 8\tests_12_4.py", line 12, in test_walk
+    x = Runner('Mark', -5)
+        ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yusyp\Python Projects\pythonProject\module 8\with_exception.py", line 11, in __init__
+    raise ValueError(f'Скорость не может быть отрицательной, сейчас {speed}')
+ValueError: Скорость не может быть отрицательной, сейчас -5
